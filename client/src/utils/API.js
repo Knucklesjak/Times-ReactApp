@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
  
   apiArticles: function(topic, startYear, endYear) {
-    let apikey = `24881b82f17b48b299e435dbc820ef19`;
+    let apikey = `need API KEY`;
     let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${apikey}&q=${topic}&begin_date=${startYear}0101&end_date=${endYear}1231&fl=web_url,headline,pub_date`;
     return axios.get(url)
       .then(res => {
